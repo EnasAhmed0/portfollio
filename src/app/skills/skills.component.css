@@ -1,0 +1,16 @@
+.progress {
+      height: 10px;
+    }
+    .skill {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .skill span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+p{
+  color: darkgrey;
+}

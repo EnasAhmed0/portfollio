@@ -1,0 +1,85 @@
+
+.gallery-img {
+  --gap: 1.25rem;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  background-color: #EEEEEE;
+}
+.gallery-img .card {
+  width: calc(calc(100% - var(--gap) * 2) / 3);
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #fff;
+  width: 100%;
+}
+.gallery-img .card img{
+  width: 100%;
+  transition: scale .5s;
+}
+.gallery-img .card .layer {
+  padding: 0.8rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.588);
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: top .5s;
+}
+.gallery-img .card:hover img {
+  scale: 1.2;
+}
+.gallery-img .card:hover .layer {
+  top: 0;
+}
+.gallery-img .card .layer p {
+  color: #ddd;
+  text-align: center;
+}
+.card{
+  border: 1px solid red;
+  width: 50%;
+}
+ .social-media {
+  background-color: #ffffff4d;
+  width: fit-content;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  position: absolute;
+  top: 1.875rem;
+  right: -3.125rem;
+  transition: right 1.5s;
+}
+
+ .gallery-img:hover .social-media {
+  right: 0.625rem;
+  transition: right 1s .5s;
+}
+
+ .social-media i {
+  font-size: 1.125rem;
+  padding: 0.625rem 0.3125rem;
+  color: #1b1b7266;
+  transition: color .5s;
+  list-style: none;
+}
+
+.chefs-items .social-media i:hover {
+  color: #c4c4cae6;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
